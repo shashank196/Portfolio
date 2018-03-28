@@ -6,7 +6,7 @@ use portfolio;
 drop table userTable;
 drop table transactions;
 drop table compute;
-
+drop table stock_market;
 
 
 create table userTable(
@@ -43,3 +43,12 @@ select * from userTable;
 select * from transactions;
 
 select * from compute;
+
+select * from stock_market;
+
+create table stock_market(
+	stock_name varchar(20) primary key,
+    price double
+);
+
+truncate table stock_market;
